@@ -1,4 +1,4 @@
-let fn1 = function() {
+let fn1 = function () {
  // functions can be assigned to variables
 }
 fn1() // invocation
