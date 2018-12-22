@@ -1,4 +1,5 @@
 var ver = 10
+ver = 'android'
 let nm = 'HoneyComb'
 if(true) {
     var ver = 20
