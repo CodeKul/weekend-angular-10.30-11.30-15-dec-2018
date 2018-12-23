@@ -1,5 +1,6 @@
 export class Device {
-    /*private type: number
+    /*
+    private type: number
     private manu: string
 
     constructor(
