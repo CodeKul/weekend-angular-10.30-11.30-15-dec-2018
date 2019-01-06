@@ -6,6 +6,11 @@ import { TitleBarComponent } from './title-bar/title-bar.component';
 import { InfoActComponent } from './info-act/info-act.component';
 import { InfoComponent } from './info-act/info.component';
 import { ActionComponent } from './info-act/action.component';
+import { BootstrapPricingComponent } from './bootstrap-pricing/bootstrap-pricing.component';
+import { PricingNavComponent } from './bootstrap-pricing/pricing-nav.component';
+import { CardContainerComponent } from './bootstrap-pricing/card-container/card-container.component';
+import { FooterContainerComponent } from './bootstrap-pricing/footer-container/footer-container.component';
+import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +18,13 @@ import { ActionComponent } from './info-act/action.component';
     TitleBarComponent,
     InfoActComponent,
     InfoComponent,
-    ActionComponent
+    ActionComponent,
+    BootstrapPricingComponent,
+    PricingNavComponent,
+    CardContainerComponent,
+    FooterContainerComponent,
+    PricingCardComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule
