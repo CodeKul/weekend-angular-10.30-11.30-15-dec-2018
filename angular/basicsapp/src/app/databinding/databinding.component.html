@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <p> You are in {{institute}} </p>
-    <p> Calculation {{45*89}} </p> 
+    <p> Calculation {{45*89}} </p>
     <p> Date is {{date()}} </p>
   </div>
 </div>
@@ -25,5 +25,31 @@
 <div class="row">
   <div class="col-md-12">
     <input type="button" value="Okay" class="btn btn-primary" (click)="myClk($event)">
+  </div>
+</div>
+
+<div class="card">
+  <div class="row">
+    <div class="col-md-12">
+      <p [class.alert]="true"
+          [class.alert-info]="alSts.isInfo"
+          [class.alert-success]="alSts.isSuccess"
+          [class.alert-warning]="alSts.isWarning"
+          [class.alert-danger]="alSts.isDanger"
+      > Welcome to Top Training, codekul</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <input type="button" value="Warning" class="btn btn-warning" (click)="mkAl('warning')">
+      <input type="button" value="Info" class="btn btn-info" (click)="mkAl('info')">
+      <input type="button" value="Danger" class="btn btn-danger" (click)="mkAl('danger')">
+      <input type="button" value="Success" class="btn btn-success" (click)="mkAl('success')">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="myVar"> {{myVar}}
   </div>
 </div>
