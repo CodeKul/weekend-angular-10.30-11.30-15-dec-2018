@@ -13,6 +13,7 @@ import { FooterContainerComponent } from './bootstrap-pricing/footer-container/f
 import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { NormalComponent } from './view-encapsulation/normal/normal.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NormalComponent } from './view-encapsulation/normal/normal.component';
     PricingCardComponent,
     InfoComponent,
     ViewEncapsulationComponent,
-    NormalComponent
+    NormalComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule

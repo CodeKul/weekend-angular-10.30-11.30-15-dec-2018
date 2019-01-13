@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-12">
+    <p> You are in {{institute}} </p>
+    <p> Calculation {{45*89}} </p> 
+    <p> Date is {{date()}} </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="{{type}}">
+    <input [type]="type">
+    <input [type]="'button'">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p [style.border]="'1px solid red'">You are in codekul</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p [class.alert]="true" [class.alert-info]="true"> Learning is Implementation</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="Okay" class="btn btn-primary" (click)="myClk($event)">
+  </div>
+</div>
