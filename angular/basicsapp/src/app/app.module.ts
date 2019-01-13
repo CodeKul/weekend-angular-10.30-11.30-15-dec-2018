@@ -11,6 +11,8 @@ import { PricingNavComponent } from './bootstrap-pricing/pricing-nav.component';
 import { CardContainerComponent } from './bootstrap-pricing/card-container/card-container.component';
 import { FooterContainerComponent } from './bootstrap-pricing/footer-container/footer-container.component';
 import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { NormalComponent } from './view-encapsulation/normal/normal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing
     CardContainerComponent,
     FooterContainerComponent,
     PricingCardComponent,
-    InfoComponent
+    InfoComponent,
+    ViewEncapsulationComponent,
+    NormalComponent
   ],
   imports: [
     BrowserModule
