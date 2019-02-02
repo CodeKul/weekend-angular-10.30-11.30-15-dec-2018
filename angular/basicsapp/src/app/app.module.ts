@@ -17,6 +17,9 @@ import { NormalComponent } from './view-encapsulation/normal/normal.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { MyBadgeComponent } from './databinding/my-badge/my-badge.component';
+import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
+import { ProgressComponent } from './inter-comp-v1/progress/progress.component';
+import { EmojisComponent } from './inter-comp-v1/emojis/emojis.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { MyBadgeComponent } from './databinding/my-badge/my-badge.component';
     NormalComponent,
     DatabindingComponent,
     CalculatorComponent,
-    MyBadgeComponent
+    MyBadgeComponent,
+    InterCompV1Component,
+    ProgressComponent,
+    EmojisComponent
   ],
   imports: [
     BrowserModule,
