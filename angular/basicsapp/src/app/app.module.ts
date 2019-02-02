@@ -16,6 +16,7 @@ import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulat
 import { NormalComponent } from './view-encapsulation/normal/normal.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { MyBadgeComponent } from './databinding/my-badge/my-badge.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     ViewEncapsulationComponent,
     NormalComponent,
     DatabindingComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    MyBadgeComponent
   ],
   imports: [
     BrowserModule,
