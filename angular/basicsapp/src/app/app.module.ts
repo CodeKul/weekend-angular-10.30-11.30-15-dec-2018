@@ -15,6 +15,7 @@ import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { NormalComponent } from './view-encapsulation/normal/normal.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
     InfoComponent,
     ViewEncapsulationComponent,
     NormalComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row saleh">
+      <div class=" col-xs-12  col-sm-offset-4 col-sm-12  col-md-offset-3 col-md-6  col-lg-offset-3 col-lg-6  ">
+          <form name="form" class="jumbotron calcontainer col-xs-12  col-sm-offset-4 col-sm-12  col-md-offset-3 col-md-6  col-lg-offset-3 col-lg-6">
+              <!-- panel for the calc -->
+              <input class=" form-control " #panel placeholder="0." disabled [value]="calcNum"><br/>
+              <!-- User Input Buttons for the calc -->
+              <input class="form-group btn btn-default bttn" type="button" #bttn7 value="7" (click)="calC(bttn7.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn8 value="8" (click)="calC(bttn8.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn9 value="9" (click)="calC(bttn9.value)">
+              <input class="form-group btn btn-danger bttn" type="button" #bttnplus value="+" (click)="calC(bttnplus.value)"><br/>
+              <input class="form-group btn btn-default bttn" type="button" #bttn4 value="4" (click)="calC(bttn4.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn5 value="5" (click)="calC(bttn5.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn6 value="6" (click)="calC(bttn6.value)">
+              <input class="form-group btn btn-danger bttn" type="button" #bttnminus value="-" (click)="calC(bttnminus.value)"><br/>
+
+              <input class="form-group btn btn-default bttn" type="button" #bttn1 value="1" (click)="calC(bttn1.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn2 value="2" (click)="calC(bttn2.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn3 value="3" (click)="calC(bttn3.value)">
+              <input class="form-group btn btn-danger bttn" type="button" #bttnmulti value="*" (click)="calC(bttnmulti.value)"><br/>
+              <input class="form-group btn btn-default bttn" type="button" #bttndot value="." (click)="calC(bttndot.value)">
+              <input class="form-group btn btn-default bttn" type="button" #bttn0 value="0" (click)="calC(bttn0.value)">
+              <input class="form-group btn btn-danger bttn" type="button" #bttnmod value="%" (click)="calC(bttnmod.value)">
+              <input class="form-group btn btn-danger bttn" type="button" #bttndiv value="/" (click)="calC(bttndiv.value)"><br/>
+
+              <!-- calling new reset function -->
+              <input class="form-group btn btn-info bttn bttne" type="button" #bttnclear value="CE" (click)="CE()">
+
+              <input class="form-group btn btn-success bttn bttne" type="button" #bttnEQL value="=" (click)="mkEql()">
+          </form>
+      </div>
+
+  </div>
+</div>
