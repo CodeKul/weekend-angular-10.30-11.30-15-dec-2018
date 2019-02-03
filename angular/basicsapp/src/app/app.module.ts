@@ -20,6 +20,7 @@ import { MyBadgeComponent } from './databinding/my-badge/my-badge.component';
 import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
 import { ProgressComponent } from './inter-comp-v1/progress/progress.component';
 import { EmojisComponent } from './inter-comp-v1/emojis/emojis.component';
+import { ViewRelatedComponent } from './view-related/view-related.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { EmojisComponent } from './inter-comp-v1/emojis/emojis.component';
     MyBadgeComponent,
     InterCompV1Component,
     ProgressComponent,
-    EmojisComponent
+    EmojisComponent,
+    ViewRelatedComponent
   ],
   imports: [
     BrowserModule,
