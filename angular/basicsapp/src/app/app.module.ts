@@ -22,6 +22,9 @@ import { ProgressComponent } from './inter-comp-v1/progress/progress.component';
 import { EmojisComponent } from './inter-comp-v1/emojis/emojis.component';
 import { ViewRelatedComponent } from './view-related/view-related.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MyBootComponent } from './my-boot/my-boot.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -45,11 +48,14 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     ProgressComponent,
     EmojisComponent,
     ViewRelatedComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    MyBootComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
