@@ -20,8 +20,18 @@
   <app-inter-comp-v1></app-inter-comp-v1> 
 </div> -->
 <!-- <app-calculator></app-calculator> -->
-<div class="container">
+<!-- <div class="container">
   <app-view-related>
     <h1 style="border: 1px solid red"a> Hi this is codekul</h1>    
   </app-view-related>
+</div> -->
+<div class="container">
+  <div class="col-md-12">
+    <app-lifecycle *ngIf="isVsbl"></app-lifecycle>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="Okay" class="btn btn-info" (click)="isVsbl = !isVsbl">
+  </div>
 </div>

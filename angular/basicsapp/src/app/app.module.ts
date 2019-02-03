@@ -21,6 +21,7 @@ import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
 import { ProgressComponent } from './inter-comp-v1/progress/progress.component';
 import { EmojisComponent } from './inter-comp-v1/emojis/emojis.component';
 import { ViewRelatedComponent } from './view-related/view-related.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ViewRelatedComponent } from './view-related/view-related.component';
     InterCompV1Component,
     ProgressComponent,
     EmojisComponent,
-    ViewRelatedComponent
+    ViewRelatedComponent,
+    LifecycleComponent
   ],
   imports: [
     BrowserModule,

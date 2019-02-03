@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { InfoEmoji } from './info-emoji';
 
 @Component({
@@ -28,7 +28,8 @@ export class EmojisComponent implements OnInit, OnChanges {
   ngOnInit() {
    
   }
-  ngOnChanges() {
+  ngOnChanges( ch : SimpleChanges) {
+    console.log(ch)
     if(this.emoji == 0) {
       this.emojiInfo = this.infoEmojis[0]
     }else if(this.emoji == 25) {
