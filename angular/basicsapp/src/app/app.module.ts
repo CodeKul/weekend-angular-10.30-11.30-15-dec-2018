@@ -25,6 +25,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MyBootComponent } from './my-boot/my-boot.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     EmojisComponent,
     ViewRelatedComponent,
     LifecycleComponent,
-    MyBootComponent
+    MyBootComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

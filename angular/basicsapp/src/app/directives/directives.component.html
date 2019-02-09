@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1 [ngStyle]="{border : '1px solid red'}"> Demo attribute directive</h1>
+  </div>
+</div> 
+<div class="row">
+  <div class="col-md-12">
+    <div [ngClass]="{ alert : true, 'alert-info' : isTgl}">
+      This use case of <strong>ngClass</strong>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" value="Okay" (click)="isTgl = !isTgl">
+  </div>
+</div>
