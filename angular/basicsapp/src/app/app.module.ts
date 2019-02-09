@@ -26,6 +26,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MyBootComponent } from './my-boot/my-boot.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { DirectivesComponent } from './directives/directives.component';
+import { MagicDirective } from './directives/magic.directive';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { DirectivesComponent } from './directives/directives.component';
     ViewRelatedComponent,
     LifecycleComponent,
     MyBootComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    MagicDirective
   ],
   imports: [
     BrowserModule,
