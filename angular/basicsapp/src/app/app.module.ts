@@ -1,3 +1,5 @@
+import { AggrService } from './services/aggr.service';
+import { SampleService } from './services/sample.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
@@ -29,6 +31,11 @@ import { DirectivesComponent } from './directives/directives.component';
 import { MagicDirective } from './directives/magic.directive';
 import { InfoCardComponent } from './directives/info-card.component';
 import { OppIfDirective } from './directives/opp-if.directive';
+import { ServicesComponent } from './services/services.component';
+import { DataService } from './services/data.service';
+import { InterCompV2Component } from './inter-comp-v2/inter-comp-v2.component';
+import { PrgComponent } from './inter-comp-v2/prg.component';
+import { EmjComponent } from './inter-comp-v2/emj.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +64,11 @@ import { OppIfDirective } from './directives/opp-if.directive';
     DirectivesComponent,
     MagicDirective,
     InfoCardComponent,
-    OppIfDirective
+    OppIfDirective,
+    ServicesComponent,
+    InterCompV2Component,
+    PrgComponent,
+    EmjComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +76,11 @@ import { OppIfDirective } from './directives/opp-if.directive';
     NgbModule,
     NgxDatatableModule
   ],
-  providers: [],
+  providers: [
+    SampleService,
+    DataService,
+    AggrService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
