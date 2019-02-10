@@ -27,6 +27,8 @@ import { MyBootComponent } from './my-boot/my-boot.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { DirectivesComponent } from './directives/directives.component';
 import { MagicDirective } from './directives/magic.directive';
+import { InfoCardComponent } from './directives/info-card.component';
+import { OppIfDirective } from './directives/opp-if.directive';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { MagicDirective } from './directives/magic.directive';
     LifecycleComponent,
     MyBootComponent,
     DirectivesComponent,
-    MagicDirective
+    MagicDirective,
+    InfoCardComponent,
+    OppIfDirective
   ],
   imports: [
     BrowserModule,

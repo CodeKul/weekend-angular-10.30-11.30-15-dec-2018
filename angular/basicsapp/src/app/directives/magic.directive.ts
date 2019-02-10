@@ -8,7 +8,7 @@ export class MagicDirective implements OnInit {
   @HostBinding('style.background')
   bkCl: string
 
-  @Input()
+  @Input('appMagic')
   dfCl : string
 
   constructor() { }
