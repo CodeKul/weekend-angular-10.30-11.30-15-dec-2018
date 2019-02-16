@@ -29,14 +29,10 @@ export class PrgComponent implements OnInit {
   }
 
   plus() {
-    this.progress = this.progress>= 100 ? this.progress =100 : this.progress +=25
-    this.prgStr = `${this.progress}%`
-    console.log(this.progress)
+   this.com.makeProgress(1)
   }
 
   minus() {
-    this.progress = this.progress<= 0 ? this.progress = 0 : this.progress -=25
-    console.log(this.progress)
-    this.prgStr = `${this.progress}%`
+    this.com.makeProgress(2)
   }
 }
