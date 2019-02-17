@@ -8,15 +8,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  usNm : string
+  usNm: string
 
   constructor(
-    private actRt : ActivatedRoute
+    private actRt: ActivatedRoute
   ) { }
 
   ngOnInit() {
     this.actRt.params.subscribe(
-     parms => this.usNm = parms['usNm']
+      parms => this.usNm = parms['usNm']
+    )
+
+    this.actRt.queryParams.subscribe(
+      qprm => console.log(qprm)
     )
   }
 }

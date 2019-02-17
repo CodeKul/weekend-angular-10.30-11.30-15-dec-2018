@@ -16,6 +16,11 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(eml: string, pass: string) {
-    this.router.navigate(['dash', eml])
+    this.router.navigate(['dash', eml], {
+      queryParams : {
+        ttl : 100,
+        tenant : 'codekul'
+      }
+    })
   }
 }
