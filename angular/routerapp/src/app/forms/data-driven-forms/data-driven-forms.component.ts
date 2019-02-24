@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-data-driven-forms',
@@ -19,7 +20,7 @@ export class DataDrivenFormsComponent implements OnInit {
       myNm: this.fb.control('', Validators.compose(
         [Validators.required, MyValidators.myVali]
       )),
-      pass: this.fb.control('', Validators.required),
+      pass: this.fb.control('', Validators.required, MyValidators.myAsync),
       mobile: this.fb.control('', Validators.required)
     })
   }
@@ -35,7 +36,22 @@ export class MyValidators {
       return null
     }
     return {
-      isA: false
+      isA: true
     }
+  }
+
+  static myAsync(control: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null>  {
+    return Observable.create( sub => {
+      setTimeout(() => {
+        if(control.value.charAt(0) === 'a') {
+          sub.next(null)
+        }else {
+          sub.next({
+            isA : true
+          })
+        }
+        sub.complete()
+      }, 3000)
+    })
   }
 }
