@@ -1,3 +1,32 @@
-<p>
-  data-driven-forms works!
-</p>
+<form class="form registration-form" [formGroup]="fg" (ngSubmit)="mySub()">
+  <div class="note">
+    <p>Data Driven Form</p>
+  </div>
+
+  <div class="form-content">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Name *" formControlName="myNm" />
+          <span class="text-muted" >Enter Your Name</span>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Phone Number *"
+          formControlName="mobile" />
+            <span class="text-muted" >Enter Your Mobile</span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Password *"
+          formControlName="pass"/>
+          <span class="text-muted">Enter Your Password</span>
+        </div>
+      </div>
+    </div>
+    <button  type="submit" class="btnSubmit">Submit</button>
+    <div>
+      <span class="text-muted text-center">{{vldMsg}}</span>
+    </div>
+  </div>
+</form>
