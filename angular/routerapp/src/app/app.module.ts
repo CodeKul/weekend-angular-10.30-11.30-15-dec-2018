@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { StarterComponent } from './dashboard/starter/starter.component';
 import { FormsComponent } from './forms/forms.component';
 import { DataDrivenFormsComponent } from './forms/data-driven-forms/data-driven-forms.component';
 import { TemplateDrivenFormsComponent } from './forms/template-driven-forms/template-driven-forms.component';
+import { HttpComponent } from './http/http.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { TemplateDrivenFormsComponent } from './forms/template-driven-forms/temp
     StarterComponent,
     FormsComponent,
     DataDrivenFormsComponent,
-    TemplateDrivenFormsComponent
+    TemplateDrivenFormsComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, // template driven
-    ReactiveFormsModule // data driven
+    ReactiveFormsModule, // data driven
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

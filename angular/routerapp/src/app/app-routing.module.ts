@@ -1,3 +1,4 @@
+import { HttpComponent } from './http/http.component';
 import { AlertComponent } from './dashboard/alert/alert.component';
 import { JumboComponent } from './dashboard/jumbo/jumbo.component';
 import { StarterComponent } from './dashboard/starter/starter.component';
@@ -27,7 +28,7 @@ const routes: Routes = [
   { path: 'dash/:usNm', component: DashboardComponent, children: dashRoutes, canActivate: [ProtectGuard] },
   { path: 'rm/:usNm', component: RmComponent },
   { path: 'forms', component: FormsComponent, children: formsRoutes },
-
+  { path: 'http', component: HttpComponent },
   { path: '**', redirectTo: 'rm/error' }
 ];
 
