@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <p> Amount is {{amt | currency:"Rs"}} </p> 
+    <p> Amount is {{date | date}} </p> 
+    <p> OS is {{os | slice:0:2 | uppercase}} </p>
+    <p> OS is {{os | custom }} </p> 
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="mb">
+    <input type="text" [(ngModel)]="tb">
+    <input type="button" value="Okay" class="btn btn-info" (click)="onOk()">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let mob of (mobiles | mobflt:mb)">{{mob}}</li>   
+    </ul>
+  </div>
+</div>

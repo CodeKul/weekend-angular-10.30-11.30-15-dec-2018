@@ -15,6 +15,9 @@ import { FormsComponent } from './forms/forms.component';
 import { DataDrivenFormsComponent } from './forms/data-driven-forms/data-driven-forms.component';
 import { TemplateDrivenFormsComponent } from './forms/template-driven-forms/template-driven-forms.component';
 import { HttpComponent } from './http/http.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { CustomPipe } from './pipes/custom.pipe';
+import { MobfltPipe } from './pipes/mobflt.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { HttpComponent } from './http/http.component';
     FormsComponent,
     DataDrivenFormsComponent,
     TemplateDrivenFormsComponent,
-    HttpComponent
+    HttpComponent,
+    PipesComponent,
+    CustomPipe,
+    MobfltPipe
   ],
   imports: [
     BrowserModule,

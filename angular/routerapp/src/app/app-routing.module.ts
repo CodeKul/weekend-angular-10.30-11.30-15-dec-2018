@@ -11,6 +11,7 @@ import { ProtectGuard } from './dashboard/protect.guard';
 import { FormsComponent } from './forms/forms.component';
 import { TemplateDrivenFormsComponent } from './forms/template-driven-forms/template-driven-forms.component';
 import { DataDrivenFormsComponent } from './forms/data-driven-forms/data-driven-forms.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 const dashRoutes: Routes = [
   { path: 'starter', component: StarterComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'rm/:usNm', component: RmComponent },
   { path: 'forms', component: FormsComponent, children: formsRoutes },
   { path: 'http', component: HttpComponent },
+  { path: 'pipe', component: PipesComponent },
   { path: '**', redirectTo: 'rm/error' }
 ];
 
